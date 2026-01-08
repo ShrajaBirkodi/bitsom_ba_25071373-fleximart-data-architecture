@@ -1,20 +1,18 @@
-# Part 1: Relational Database & ETL Pipeline
+# Part 2: NoSQL Data Modeling & MongoDB Analytics
 
 ## Overview
-This part focuses on designing and implementing a relational database for FlexiMart and building an ETL pipeline to load raw transactional data into MySQL.
+This part explores NoSQL data modeling using MongoDB for flexible and scalable product analytics. Product data is stored in JSON format and queried using MongoDB aggregation pipelines.
 
-Raw customer, product, and sales data are extracted from CSV files, cleaned using Python, and loaded into normalized database tables. Data quality checks are performed to ensure consistency and correctness.
+MongoDB is used to perform category-level analysis, price-based filtering, and insights that are difficult to model efficiently in relational databases.
 
 ## Key Activities
-- Designed relational schema for customers, products, and orders
-- Built a Python-based ETL pipeline using pandas
-- Handled data quality issues such as invalid dates and missing values
-- Loaded cleaned data into MySQL
-- Wrote business-driven SQL queries
-- Documented schema and data quality observations
+- Imported product catalog data into MongoDB
+- Designed document-based data structure
+- Performed aggregation queries for product analysis
+- Compared NoSQL and relational approaches for analytics
+- Documented insights and observations
 
 ## Deliverables
-- `etl_pipeline.py`
-- `schema_documentation.md`
-- `business_queries.sql`
-- `data_quality_report.txt`
+- `products_catalog.json`
+- `mongodb_operations.js`
+- `nosql_analysis.md`
