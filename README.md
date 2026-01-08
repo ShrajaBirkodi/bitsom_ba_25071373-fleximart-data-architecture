@@ -1,18 +1,19 @@
-# Part 2: NoSQL Data Modeling & MongoDB Analytics
+# Part 3: Data Warehouse & Analytical Queries
 
 ## Overview
-This part explores NoSQL data modeling using MongoDB for flexible and scalable product analytics. Product data is stored in JSON format and queried using MongoDB aggregation pipelines.
+This part focuses on designing a dimensional data warehouse using a star schema to support analytical reporting and business intelligence use cases.
 
-MongoDB is used to perform category-level analysis, price-based filtering, and insights that are difficult to model efficiently in relational databases.
+Fact and dimension tables were created to enable efficient OLAP queries such as sales trends, customer segmentation, and product performance analysis.
 
 ## Key Activities
-- Imported product catalog data into MongoDB
-- Designed document-based data structure
-- Performed aggregation queries for product analysis
-- Compared NoSQL and relational approaches for analytics
-- Documented insights and observations
+- Designed star schema with fact and dimension tables
+- Created warehouse schema using SQL
+- Loaded dimension and fact data
+- Executed analytical queries for business insights
+- Enabled drill-down and aggregate analysis
 
 ## Deliverables
-- `products_catalog.json`
-- `mongodb_operations.js`
-- `nosql_analysis.md`
+- `star_schema_design.md`
+- `warehouse_schema.sql`
+- `warehouse_data.sql`
+- `analytics_queries.sql`
