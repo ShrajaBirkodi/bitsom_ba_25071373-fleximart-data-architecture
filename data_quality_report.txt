@@ -1,0 +1,33 @@
+1. Built an ETL pipeline using Python and MySQL. 
+The pipeline extracts raw CSV data, performs cleaning and transformation such as removing duplicates, handling missing values, standardizing date formats, and then loads the cleaned data into a relational database while maintaining referential integrity.
+
+2. Data Quality Issues Identified & Resolved
+Customers Data
+Duplicate customer records were identified and removed.
+Missing email values were handled by allowing NULLs where applicable.
+Phone numbers were standardized.
+Registration dates were validated and loaded in DATE format.
+
+Products Data
+Missing prices were replaced with default values.
+Missing stock quantities were set to zero.
+Product categories were standardized (Electronics, Fashion, Groceries).
+Duplicate product records were prevented by clearing the table before reload.
+
+Sales Data
+Duplicate transactions were removed.
+Mixed date formats were standardized to YYYY-MM-DD during transformation.
+Invalid foreign key references were resolved by assigning a valid surrogate customer key.
+Total order amount was calculated as quantity × unit_price.
+
+3. ETL Execution Strategy
+Target tables were cleared in a foreign-key-safe order (orders → products → customers).
+Data was loaded sequentially: customers, products, then sales.
+Referential integrity was maintained throughout the process.
+
+4. Final Load Summary
+Customers loaded: 25
+Products loaded: 20
+Orders loaded: 41
+
+The ETL pipeline executed successfully with all data quality issues addressed.
